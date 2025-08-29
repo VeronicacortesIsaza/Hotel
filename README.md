@@ -38,5 +38,4 @@ Este proyecto busca reforzar los conceptos de **clases, herencia, encapsulamient
 
 ---
 ## Autoras
-**Verónica Cortés Isaza** y **Valentina Hoyos Isaza** 
-Examen 1 – Programación Orientada a Objetos.
+**Verónica Cortés Isaza** y **Valentina Hoyos Isaza** - Examen 1 – Programación Orientada a Objetos.
