@@ -20,7 +20,7 @@ class Hotel:
 
     def reservar(self, cliente: str, documento: str, noches: int, tipo_habitacion) -> Reserva | None:
         for habitacion in self.habitaciones:
-            if isinstance(habitacion, tipo_habitacion) and habitacion.disponible:
+            if isinstance(habitacion, tipo_habitacion) and habitacion.esta_disponible():
                 reserva = Reserva(habitacion, cliente, documento, noches)
                 self.reservas.append(reserva)
                 print("Reserva realizada con éxito.")
