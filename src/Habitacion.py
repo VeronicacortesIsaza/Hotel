@@ -3,17 +3,20 @@ class Habitacion:
         self.numero = numero
         self.tipo = tipo
         self.precio = precio
-        self.disponible = True
+        self.__disponible = True
+    
+    def esta_disponible(self) -> bool:
+        return self.__disponible
 
     def ocupar(self) -> None:
-        if not self.disponible:
+        if not self.__disponible:
             print(f"La habitación {self.numero} no está disponible.")
-        self.disponible = False
+        self.__disponible = False
 
     def liberar(self) -> None:
-        if self.disponible:
+        if self.__disponible:
             print(f"La habitación {self.numero} ya está disponible.")
-        self.disponible = True
+        self.__disponible = True
 
     def calcular_costo(self, dias: int) -> float:
         if dias <= 0:
@@ -22,5 +25,5 @@ class Habitacion:
         return dias * self.precio
 
     def __str__(self) -> str:
-        estado = "disponible" if self.disponible else "no disponible"
+        estado = "disponible" if self.esta_disponible() else "no disponible"
         return f"Hab. {self.numero} ({self.tipo}): ${self.precio} - {estado}"
