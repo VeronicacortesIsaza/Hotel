@@ -27,15 +27,37 @@ El **menú principal** actúa como interfaz de interacción con el usuario, faci
 Este proyecto busca reforzar los conceptos de **clases, herencia, encapsulamiento y métodos en Python**, aplicados a un caso práctico y cercano a un entorno real.  
 
 ---
-# Para ejecutar el código, se deben realizar los siguientes pasos:
-1. Abrir la consola de Visual Studio Code, presionando las teclas **Control + Shift + ñ**
 
-2. Para clonar el repositorio escribir en consola **git clone "https://github.com/VeronicacortesIsaza/Hotel.git"**
+## Clonar repositotio desde Visual Studio Code
 
-3. Para ejecutar el programa escribir **python Main.py**
+1. Abre VS Code.  
+2. En la barra lateral izquierda, haz clic en **Source Control** (ícono de ramita ⎇).  
+3. Haz clic en **Clonar repositorio**.  
+4. **Pega la URL del repositorio**:  
+   ```
+   https://github.com/VeronicacortesIsaza/Hotel.git
+   ```
+5. Selecciona la carpeta donde quieres guardar el proyecto.  
+6. Cuando termine la clonación, elige **Abrir repositorio clonado**.
 
-4. Digitar la opción deseada en el menú principal y responder a las preguntas que, posteriormente, aparecerán
+---
 
+## Ejecutar el Programa
+1. Abre una nueva termina presionando **Control + shift + ñ"
+2. Cambia de rama escribiendo git checkout Prod
+3. Escribe en consola py Main.py
+
+Aparecerá el menú:
+
+```
+===== SISTEMA DE RESERVAS DE HOTEL =====
+1. Reservar habitación
+2. Cancelar reserva
+3. Mostrar reservas
+4. Salir
+```
+
+Sigue las instrucciones en pantalla para reservar, cancelar o mostrar reservas.
 ---
 ## Autoras
 **Verónica Cortés Isaza** y **Valentina Hoyos Isaza** - Examen 1 – Programación Orientada a Objetos.
